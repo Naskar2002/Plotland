@@ -13,7 +13,7 @@ menu.addEventListener("click", () => {
 
 // Banner-swiper
 
-const bannerSwiper = new Swiper("#banner", {
+const bannerSwiper = new Swiper("#banner-swiper", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
@@ -50,16 +50,16 @@ const swiper = new Swiper("#testimonial", {
     },
     576: {
       slidesPerView: 1,
-      spaceBetween: 8,
+      spaceBetween: 4,
     },
-    // 425: {
-    //   slidesPerView: 1,
-    //   spaceBetween: 7,
-    // },
-    // 320: {
-    //   slidesPerView: 1,
-    //   spaceBetween: 5,
-    // },
+    425: {
+      slidesPerView: 1,
+      spaceBetween: 7,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 5,
+    },
   },
 });
 

@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
 
-
 /* Common-classes */
 
+html,
 body {
   font-family: "Syne", sans-serif;
   background-color: #f0f8ff;
+  overflow-x: hidden !important;
 }
 
 * {
@@ -114,23 +115,27 @@ ul > li a {
 }
 
 /*Banner-section*/
+#banner-swiper .swiper-slide {
+  padding: 90px 0;
+  min-height: 812px;
+  display: flex;
+  align-items: center;
+}
+.banner-1 {
+  background: url("../assets/Banner-1.png") no-repeat center/cover;
+  /* min-height: 100vh; */
+}
+.banner-2 {
+  background: url("../assets/Banner-2.png") no-repeat center/cover;
+  /* min-height: 100vh; */
+}
+.banner-3 {
+  background: url("../assets/Banner-3.png") no-repeat center/cover;
+  /* min-height: 100vh; */
+}
 
-.banner-sec {
-  background: url(../assets/Banner-1.png) no-repeat center / cover;
-  min-height: 812px;
-}
-.banner-sec2 {
-  background: url(../assets/Banner-2.png) no-repeat center / cover;
-  min-height: 812px;
-}
-.banner-sec3 {
-  background: url(../assets/Banner-3.png) no-repeat center / cover;
-  min-height: 812px;
-}
-.banner-sec > div > div,
-.banner-sec2 > div > div,
-.banner-sec3 > div > div {
-  padding-top: 250px;
+.banner .swiper-slide .container {
+  height: 100%;
 }
 .content h1 {
   font-size: 68px;
@@ -147,7 +152,16 @@ ul > li a {
 .content a {
   margin-top: 48px;
 }
-.banner-sec3 .btn {
+.banner-1 h1 {
+  max-width: 650px;
+}
+.banner-2 h1 {
+  max-width: 611px;
+}
+.banner-3 h1 {
+  max-width: 681px;
+}
+.banner-3 .btn {
   background-color: white;
   color: black;
 }
@@ -293,6 +307,9 @@ ul > li a {
 .agent-card span {
   font-size: 20px;
   font-weight: 400;
+}
+.agent-2{
+  max-width: 212px !important;
 }
 .last {
   max-width: 177px !important;
@@ -779,17 +796,16 @@ h5 {
   }
 }
 @media screen and (max-width: 576px) {
-  .col-33,
-  .col-25 {
-    width: 50%;
+  .col-25,
+  .col-33 {
+    width: 100%;
     padding: 0 15px;
   }
   .col-50 {
     width: 100%;
     padding: 0 15px;
   }
-}
-@media screen and (max-width: 426px) {
+
   h2 {
     font-size: 32px;
   }
@@ -797,18 +813,14 @@ h5 {
     font-size: 13px;
   }
   /* Banner */
-  .banner-sec,
-  .banner-sec2,
-  .banner-sec3 {
-    min-height: 611px;
-  }
-  .banner-sec > div > div,
-  .banner-sec2 > div > div,
-  .banner-sec3 > div > div {
-    padding-top: 93px;
-  }
+  /* #banner-swiper .swiper-slide {
+    padding: 90px 0;
+    min-height: 500px;
+    display: flex;
+  
+  } */
   .content h1 {
-    font-size: 52px;
+    font-size: 40px;
   }
   .content a {
     margin-top: 19px;
@@ -842,6 +854,9 @@ h5 {
   }
   .content h4 {
     margin-bottom: 9px;
+  }
+  .card .button {
+    text-align: center;
   }
   .first-btn {
     padding: 11px 15px;
@@ -920,5 +935,10 @@ h5 {
   .right-arrow > img {
     max-width: 100%;
     object-fit: contain;
+  }
+
+  footer p {
+    font-size: 15px;
+    margin-bottom: 10px;
   }
 }
