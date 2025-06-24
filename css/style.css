@@ -167,7 +167,9 @@ ul > li a {
 }
 
 /* m-view Section */
-
+#media-swiper{
+  display: none;
+}
 .m-view {
   padding-block: 75px;
 }
@@ -813,6 +815,7 @@ h5 {
     font-size: 13px;
   }
   /* Banner */
+
   /* #banner-swiper .swiper-slide {
     padding: 90px 0;
     min-height: 500px;
@@ -834,6 +837,13 @@ h5 {
 
   .m-view {
     padding-block: 32px;
+  }
+  .c-content{
+    display:none;
+  }
+
+  #media-swiper{
+    display: block;
   }
   .top p {
     font-size: 13px;
@@ -876,6 +886,7 @@ h5 {
     margin: 16px auto 0;
     font-size: 11px;
   }
+
 
   /* Easiest-Method */
 

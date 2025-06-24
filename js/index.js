@@ -1,7 +1,6 @@
 // aos initialization
 AOS.init();
 
-
 // Nav-bar
 
 const navCollapse = document.querySelector(".nav-collapse");
@@ -63,6 +62,15 @@ const swiper = new Swiper("#testimonial", {
   },
 });
 
+const mediaSwiper = new Swiper("#media-swiper", {
+  direction: "horizontal",
+  slidesPerView: 1,
+  spaceBetween: 6,
+  loop: true,
+
+  
+});
+
 // blog-section-swiper
 
 const blogSwiper = new Swiper("#blog", {
@@ -95,4 +103,3 @@ const blogSwiper = new Swiper("#blog", {
     },
   },
 });
-
