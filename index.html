@@ -40,9 +40,9 @@
                         <div class="nav-content">
                             <ul>
                                 <li><a href="#">Home</a></li>
-                                <li><a href="#">About us</a></li>
+                                <li><a href="./about_us.html" target="_blank">About us</a></li>
                                 <li><a href="#">Properties</a></li>
-                                <li><a href="#">Blog</a></li>
+                                <li><a href="./blog.html" target="_blank">Blog</a></li>
                                 <li><a href="#">Contact Us</a></li>
                             </ul>
                         </div>
@@ -62,6 +62,7 @@
     </header>
 
     <!-- banner-section -->
+
     <section class="banner">
         <!-- <div class="container"> -->
         <!-- Slider main container -->
@@ -193,7 +194,7 @@
 
             <!-- 576px swiper for card -->
 
-            <div class="swiper media-swiper" id="media-swiper">
+            <!-- <div class="swiper media-swiper" id="media-swiper">
 
                 <div class="swiper-wrapper">
 
@@ -242,29 +243,29 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="col-33">
-                    <div class="card">
-                        <div class="mv-img">
-                            <img src="./assets/m-view-2.png" alt="card-1">
+                            <div class="card">
+                                <div class="mv-img">
+                                    <img src="./assets/m-view-2.png" alt="card-1">
+                                </div>
+                                <div class="address">
+                                    <p>Metrotech Center, Brooklyn, NY 11201, USA</p>
+                                    <img src="./assets/mv-img-logo.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h3>Lakeside Cottage</h3>
+                                    <h4>$540.000,00</h4>
+                                </div>
+                                <div class="button">
+                                    <a class="first-btn" href="">Book Now</a>
+                                    <a class="second-btn" href="">See Details</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="address">
-                            <p>Metrotech Center, Brooklyn, NY 11201, USA</p>
-                            <img src="./assets/mv-img-logo.png" alt="">
-                        </div>
-                        <div class="content">
-                            <h3>Lakeside Cottage</h3>
-                            <h4>$540.000,00</h4>
-                        </div>
-                        <div class="button">
-                            <a class="first-btn" href="">Book Now</a>
-                            <a class="second-btn" href="">See Details</a>
-                        </div>
-                    </div>
-                </div>
                     </div>
 
                 </div>
-            </div>
-            
+            </div> -->
+
             <div class="btn">
                 <a href="#"> View our all properties</a>
             </div>
@@ -630,7 +631,10 @@
                     </div>
                 </div>
                 <div class="col-25">
-                    <h5>Company</h5>
+                    <div class="cmp">
+                        <h5>Company</h5>
+                    </div>
+
                     <div class="f-list">
                         <ul>
                             <li><a href="">About</a></li>
@@ -643,7 +647,10 @@
 
                 </div>
                 <div class="col-25">
-                    <h5>Our Address</h5>
+                    <div class="o-add">
+                        <h5>Our Address</h5>
+                    </div>
+
                     <div class="add">
                         <img src="./assets/location.png" alt="">
                         <p>36 East 8th Street, New York,
@@ -651,10 +658,59 @@
                     </div>
                 </div>
                 <div class="col-25">
-                    <h5>Our Properties</h5>
-                    <div class="pr-img">
-                        <img src="./assets/prop.png" alt="">
+                    <div class="pr-text">
+                        <h5>Our Properties</h5>
                     </div>
+
+                    <div class="row ">
+                        <div class="col-33 f-pr-img">
+                            <div class="div-fimg">
+                                <a href=""><img src="./assets/footer-img-1.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-33 f-pr-img">
+                            <div class="div-fimg">
+                                <a href=""><img src="./assets/footer-img-2.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-33 f-pr-img">
+                            <div class="div-fimg">
+                                <a href=""><img src="./assets/footer-img-3.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-33 f-pr-img">
+                            <div class="div-fimg">
+                                <a href=""><img src="./assets/footer-img-3.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-33 f-pr-img">
+                            <div class="div-fimg">
+                                <a href=""><img src="./assets/footer-img-3.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-33 f-pr-img">
+                            <div class="div-fimg">
+                                <a href=""><img src="./assets/footer-img-3.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="row f-pr-img">
+                        <div class="col-33">
+                            <div class="div-fimg">
+                                <a href=""><img src="./assets/footer-img.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-33">
+                            <div class="div-fimg">
+                                <a href=""><img src="./assets/footer-img-5.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-33">
+                            <div class="div-fimg">
+                                <a href=""><img src="./assets/f-img-6.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
             </div>
             <hr>
@@ -680,12 +736,15 @@
     </footer>
 
     <!-- Swiper js -->
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- AOS -->
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Index js  -->
+
     <script src="js/index.js"></script>
 
 </body>

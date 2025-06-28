@@ -167,7 +167,7 @@ ul > li a {
 }
 
 /* m-view Section */
-#media-swiper{
+#media-swiper {
   display: none;
 }
 .m-view {
@@ -184,11 +184,12 @@ ul > li a {
 }
 .card {
   max-width: 456px;
-  max-height: 480px;
+  /* max-height: 480px; */
   border-radius: 25px;
   padding: 16px;
   background-color: #fff;
   overflow: hidden;
+  margin: 0 auto;
 }
 .mv-img {
   max-width: 424px;
@@ -294,6 +295,7 @@ ul > li a {
 }
 .agent-card {
   max-width: 456px;
+  margin: 0 auto;
 }
 .agent-card > img {
   max-width: 100%;
@@ -310,7 +312,7 @@ ul > li a {
   font-size: 20px;
   font-weight: 400;
 }
-.agent-2{
+.agent-2 {
   max-width: 212px !important;
 }
 .last {
@@ -510,6 +512,18 @@ hr {
   align-items: center;
   gap: 15px;
 }
+
+.div-fimg {
+  max-width: 96px;
+}
+
+.div-fimg a,
+.div-fimg a > img {
+  max-width: 100%;
+}
+.div-fimg a > img {
+  object-fit: contain;
+}
 .contact,
 .mail {
   margin-block: 30px;
@@ -527,6 +541,9 @@ h5 {
   flex-direction: column;
   gap: 17px;
 }
+.pr-text {
+  margin-bottom: 15px;
+}
 .add {
   margin-top: 15px;
 }
@@ -535,13 +552,6 @@ h5 {
   font-size: 18px;
 }
 
-.pr-img {
-  max-width: 326px;
-}
-.pr-img > img {
-  max-width: 100%;
-  object-fit: contain;
-}
 .social,
 .social-icons {
   display: flex;
@@ -706,7 +716,7 @@ h5 {
     font-size: 15px;
   }
   .col-25 {
-    width: 33.33%;
+    width: 50%;
     padding: 0 15px;
   }
   h2 {
@@ -761,7 +771,7 @@ h5 {
     font-size: 11px;
   }
   .content h3 {
-    font-size: 20px;
+    font-size: 21px;
     margin-block: 10px;
   }
   .content h4 {
@@ -838,11 +848,11 @@ h5 {
   .m-view {
     padding-block: 32px;
   }
-  .c-content{
-    display:none;
-  }
+  /* .c-content {
+    display: none;
+  } */
 
-  #media-swiper{
+  #media-swiper {
     display: block;
   }
   .top p {
@@ -886,7 +896,6 @@ h5 {
     margin: 16px auto 0;
     font-size: 11px;
   }
-
 
   /* Easiest-Method */
 
@@ -948,8 +957,53 @@ h5 {
     object-fit: contain;
   }
 
+  /* Footer-section */
+  .footer-content {
+    text-align: center;
+  }
+  .logo {
+    margin: 0 auto;
+  }
+  .contact,
+  .mail {
+    justify-content: center;
+  }
+  .mail {
+    margin-left: 24px;
+  }
+.cmp>h5{
+  text-align: center;
+}
+  .f-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    justify-content: center;
+    align-items: center;
+  }
+  .o-add>h5{
+    text-align: center;
+  }
+  .add{
+    justify-content: center;
+  }
+  .f-pr-img {
+    width: 16.66%;
+    padding: 0 7px;
+  }
   footer p {
     font-size: 15px;
     margin-bottom: 10px;
+    text-align: center;
+  }
+  .o-add {
+    margin-top: 10px;
+  }
+  .pr-text {
+    margin-block: 10px;
+    text-align: center;
+  }
+  .social{
+    justify-content: center;
   }
 }
